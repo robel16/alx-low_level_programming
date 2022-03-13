@@ -1,20 +1,22 @@
 #include <stdio.h>
 /**
  * main - main block
- * Description: Use `putchar` function to print the alphabet in lowercase.
+ * Description: Print all numbers of base64 in lowercase.
+ * You can only use `putchar`
  * Return: 0
  */
+
 int main(void)
 {
-	char c = 'a';
+	char alp = 'a';
 
-	while (c <= 'z')
-	{ 
-	    if (c!='q'&& c!='e')
-		putchar(c);
-		c++;
-	}
+	for ( ; alp <= 'z' ; alp++)
+		if (alp != 'q' && alp != 'e')
+			putchar(alp);
+
 	putchar('\n');
 
+
 	return (0);
+
 }
